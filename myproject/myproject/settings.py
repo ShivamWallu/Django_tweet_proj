@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+ik(^jory=if@(2)ve3s@lwy$jnxsy*@khqsrkzq**qe4-!dl3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://django-tweet-proj.vercel.app']
 
 
 # Application definition
@@ -128,6 +128,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Directory for collected static files
 STATICFILES_DIRS= [os.path.join(BASE_DIR, 'static')]
 
 LOGIN_URL = '/accounts/login/'
