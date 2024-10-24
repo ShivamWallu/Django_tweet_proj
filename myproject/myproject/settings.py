@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+ik(^jory=if@(2)ve3s@lwy$jnxsy*@khqsrkzq**qe4-!dl3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://django-tweet-proj.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
